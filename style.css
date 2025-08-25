@@ -1,0 +1,1000 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*nav bar*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+.maincontainer {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    
+    background-color: #073970;
+   
+    justify-content: space-around;
+   
+}
+
+
+.container_left {
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/*when i add the ecc logo on the nav bar*/
+
+.logo {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/*nav menu*/
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+ #container_right_item, #container_right_item2, #container_right_item3, #container_right_item4, #container_right_item5 {
+    color: orange;
+   
+    
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    transition: 0.7s ease-in-out;
+
+    
+}
+
+
+
+
+/*login*/
+.main_login {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    transition: 0.9s ease;
+}
+
+.login1 {
+
+  color: #fff;
+  font-family: sans-serif;
+  background-color: orange;
+  
+  
+}
+
+.login1 {
+
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.main_login:hover {
+    transform: scale(1.05);
+    
+}
+ 
+#container_right_item:hover,  #container_right_item2:hover, #container_right_item3:hover, #container_right_item4:hover, #container_right_item5:hover {
+    color: white;
+    
+}
+ 
+.toggle_btn {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*home*/
+.main_content {
+    height: 100vh;
+    height: 100dvh;
+    background: linear-gradient( rgba(0, 0, 0, 0.900),rgba(0, 0, 0, 0.100)) , url(images/front-wheel-blue-vintage-sedan.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+/*home title*/
+.maim_content_title {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    animation: slideddd 2s ease-in-out ;
+}
+
+@keyframes slideddd {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+/*displayed car page (seconde_main_content)*/
+
+
+/* cars with sliding window */
+
+.maincontainercars {
+    
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.700),rgba(0, 0, 0, 0.700)), url(images/cars-pnj/1f8d820b1145570e5eeddfeb77a8a37b_1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+.Amaincontainercars {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.maincontainercars2 {
+    height: 100%;
+    width: 90%;
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*title*/
+
+.maincontainercarsT {
+    font-size: 1.0.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    height: 5em;
+   
+
+    opacity: 0;  /* Initially hidden */
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+}
+
+.shadow {
+   
+    margin-top: 3em;
+    text-shadow: 0 0 13px rgba(0, 0, 0, 0.726);
+}
+
+.maincontainercarsT.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*content*/
+
+/*line decoration*/ 
+.linedecor {
+    height: 9em;
+    width: 0.1em;
+    margin-top: 1.2em;
+    border-radius: 5em;
+    background-color: orange;
+    margin-right: -16em;
+}
+
+.main_info_1, .main_info_2, .main_info_3, .main_info_4, .main_info_5  {
+    font-family: sans-serif;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buttonbuy1, .buttonbuy2, .buttonbuy3, .buttonbuy4, .buttonbuy5 {
+    border: none;
+    background-color: orange;
+    border-radius: 13.5px;
+    width: 60%;
+    height: 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 23.8px;
+   
+    
+    margin-top: 1em;
+    transition: 0.9s ease;
+    max-width: 50px;
+    min-width: 80px;
+}
+
+.buttonbuy1:hover, .buttonbuy2:hover, .buttonbuy3:hover, .buttonbuy4:hover, .buttonbuy5:hover {
+    background-color: #073970;
+    transform: scale(1.1);
+    
+}
+
+/*sliding windows*/
+.slider {
+    
+    box-sizing: border-box;
+    width: 40em;         /* Adjust width as needed */
+    height: 30em;        /* Adjust height as needed */
+    overflow: hidden;     /* Hide overflowing slides */
+    border-radius: 20px;
+    
+    filter: drop-shadow(5px 5px 5px rgba(255, 166, 0, 0.74));
+    
+  }
+
+  
+
+  .slider2 {
+    color: aliceblue;
+    width: 30em;         
+    height: 30em;        
+    overflow: hidden;
+   
+   
+  }
+  
+  .slides2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .slide2 {
+    flex-shrink: 0;
+    width: 100%;          
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: -2em;
+  }
+
+  .slide {
+    flex-shrink: 0;
+    width: 100%;          
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
+
+  .imagestyle {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slider3 {
+    color: aliceblue;
+    width: 1em;         
+    height: 1em;        
+    margin-bottom: 5%;
+    border: 1px solid white;
+  }
+  
+  .slides3{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .slide3 {
+    flex-shrink: 0;
+    width: 100%;          
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: -2em;
+  }
+  /* Navigation Buttons */
+  .prev, .next, .prev2, .next2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+
+
+
+
+/*accessories*/
+.accessories-main-container {
+    height: 100vh;
+    background-color:  white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+.accessories-title {
+    margin-top: 1em;
+    color: #073970;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.accessories-child-container {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+.accessorie-01 {
+    height: 10em;
+    width: 10em;
+    background: url(images/accessories-pic/01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*same div informations1 for all*/
+
+.informations1 {
+    background-color: #073a70;
+    color: white;
+    height: 30%;
+    width: 100%;
+    margin-top: 100%;
+    cursor: pointer;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+
+
+}
+
+.accessorie-01:hover {
+    .informations1 {
+        transform: translateY(-100%);
+    }
+}
+.accessorie-02 {
+    height: 10em;
+    width: 10em;
+    background: url(images/accessories-pic/02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.accessorie-02:hover {
+    .informations1 {
+        transform: translateY(-100%);
+    }
+}
+.accessorie-03 {
+    height: 10em;
+    width: 10em;
+    background: url(images/accessories-pic/03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.accessorie-03:hover {
+    .informations1 {
+        transform: translateY(-100%);
+    }
+}
+
+.accessorie-04 {
+    height: 10em;
+    width: 10em;
+    background: url(images/accessories-pic/04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.accessorie-04:hover {
+    .informations1 {
+        transform: translateY(-100%);
+    }
+}
+
+.accessorie-05 {
+    height: 10em;
+    width: 10em;
+    background: url(images/accessories-pic/05.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.accessorie-05:hover {
+    .informations1 {
+        transform: translateY(-100%);
+    }
+}
+
+.accessorie-06 {
+    height: 10em;
+    width: 10em;
+    background: url(images/accessories-pic/06.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.accessorie-06:hover {
+    .informations1 {
+        transform: translateY(-100%);
+    }
+}
+/*our services*/
+.our_services_bckgrnd {
+    padding: 20px 15px;
+     /* To avoid overlap with the fixed nav */
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)), url(images/electric-car-charging-home-clean-energy-filling-technology.jpg); 
+    
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/*title*/
+
+.our_services_grp1_title {
+    margin-top: 1em;
+    color: white;
+    text-shadow: 0 0 13px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/*fliping card*/
+
+.organisation {
+    display: flex;
+    
+}
+
+.fliping-bottun {
+    width: 18rem;
+    height: 18rem;
+    perspective: 100rem;
+    cursor: pointer;
+    margin: 4rem;
+
+    
+}
+
+.main_bottun, .first_button, .first_button1, .first_button2, .first_button3, .first_button_back1, .first_button_back2, .first_button_back3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main_bottun {
+    transition: transform 0.6s; /*time of the animation*/
+    transform-style: preserve-3d; /*so all child element are on the same 3d plane*/
+
+}
+
+.fliping-bottun:hover .main_bottun, .first_button_back1, .first_button_back2, .first_button_back3 {
+    transform: rotateY(180deg);
+
+}
+
+.first_button, .first_button1, .first_button2, .first_button3, .first_button_back1, .first_button_back2, .first_button_back3 {
+    border-radius: 150px;
+    position: absolute;
+    display: flex;
+
+/*use the backface-visibility to prevent the card from blocking the back card after it's rotate*/
+    backface-visibility: hidden;
+}
+
+
+.first_button {
+   
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    background: linear-gradient(#073970, rgba(255, 166, 0, 0.425) ) #073970;
+}
+
+.first_button1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.815),rgba(0, 0, 0, 0.055)), url(images/loop-cars-concept-collage.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-position: center;
+    background-size: cover;
+    color: white;
+   
+    
+}
+.first_button2 {
+   
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.055)), url(images/man-charging-electric-car-full-shot.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.first_button3 {
+   
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.055)), url(images/repairman-tightens-car-screws.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.first_button_back3 {
+   
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#073970, rgba(255, 166, 0, 0.425) ) #073970;
+    font-size: 0.9rem;
+    padding: 1.2rem;
+   
+}
+
+.first_button_back2 {
+    
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#073970, rgba(255, 166, 0, 0.425) ) #073970;
+    font-size: 0.9rem;
+    padding: 1.2rem;
+   
+}
+
+.first_button_back1 {
+    background: linear-gradient(#073970, rgba(255, 166, 0, 0.425) ) #073970;
+   
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    padding: 1.2rem;
+   
+}
+
+
+.fliping-bottun {
+    filter: drop-shadow(3px 3px 20px rgba(255, 166, 0, 0.445)) ;
+}
+
+
+/*about us*/
+.about_us_background {
+  
+    min-height: 100vh;
+    background-color:  #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_us_title {
+   
+    margin-top: -6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #073970;
+    
+}
+
+.about_us_title, .content_illustrator {
+    margin: 1em;
+}
+
+/*the big imge*/
+.content_illustrator1 {
+    height: 100%;
+}
+.image_illustrator1 {
+    
+    height: 100%;
+    width: 28em;
+   
+    
+}
+
+.content_illustrator {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 25em;
+    
+  
+}
+
+
+.text_explanation {
+    height: 100%;
+    width: 45%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+
+    flex-direction: column;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+
+
+/*team members*/
+.our-company-members {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 60em;
+   
+}
+
+.team-members-title, .small-title {
+    color: #073970;
+    margin: 0.3em;
+    text-align: center;
+    
+}
+.membersimage {
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.description {
+    height: 48%;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+   
+}
+
+.description-1 {
+   margin-left: 1em;
+    
+
+}
+.our-company-m2 {
+   
+    background-color: rgb(223, 223, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.452);
+    height: 15em;
+    width: 13em;
+    
+}
+
+
+
+
+
+/*contact us page*/
+.contact_us_main {
+    height: 20vh;
+    height: 20dvh;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact_us_main .contact_us_element p{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*dropdown menu*/
+
+.dropdownmenu {
+    top: 70px;
+    right: 1rem;
+
+    position: absolute;
+    height: 0;
+    width: 300px;
+    border-radius: 20px;
+    gap: 2rem;
+    background-color: #073a707e;
+    backdrop-filter: blur(15px);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.dropdownmenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+
+.dropdownmenu .main_login{
+    transition: 1s ease;
+    display: flex;
+    
+    
+}
+.dropdownmenu .main_login a .login1{
+    width: 240px;
+}
+.dropdownmenu .main_login:hover {
+    transform: scale(1.05);
+}
+.dropdownmenu.open {
+    
+    height: 350px;
+}
+/*responsive work*/
+
+@media (max-width:992px) {
+
+    .maincontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+   .toggle_btn {
+    display: block;
+   }
+   nav {
+    display: none;
+   }
+   .main_login {
+    display: none;
+   }
+   
+   .dropdownmenu {
+    display: flex;
+   }
+
+  
+
+    /*cars*/  
+    
+    /*title*/
+    
+    .maincontainercarsT {
+        
+        margin-top: 6em;    
+        
+    }
+    
+    /*content*/
+    
+    /*line decoration*/ 
+    .linedecor {
+        height: 0em;
+        width: 0em;
+       
+    }
+    .maincontainercars2 {
+        height: 100%;
+        width: 90%;
+        margin-top: -10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*sliding windows*/
+    .slider {
+        
+        
+        width: 17em;        
+        height: 19em;        
+        margin-top: 2em;
+        border-radius: 2px;
+        
+      }
+    .slider2 {
+       height: 100em;
+       width: 100em;
+       margin-left: 100%;
+       font-size: 0.1em;
+       margin-top: 20em;
+    }
+
+    .slider3 {
+        content-visibility: hidden;
+        border: none;
+    }
+    
+    
+    .buttonbuy1, .buttonbuy2, .buttonbuy3, .buttonbuy4, .buttonbuy5 {
+      
+        border-radius: 5px;
+        width: 0.1em;
+        height: 5px;
+        
+        font-weight: bold;
+        font-size: 3px;
+       
+        
+        margin-top: 1em;
+        
+        max-width: 2%;
+        min-width: none;
+    }
+      /* Navigation Buttons */
+      .prev, .next, .prev2, .next2{
+        position: absolute;
+        top: 75%;
+        font-size: 0.5em;
+        transform: translateY(-50%);
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        border: none;
+        padding: 0.1px;
+        cursor: pointer;
+      }
+      .accessories-main-container {
+        
+        display: flex;
+        height: 180vh;
+        height: 180dvh;
+        padding: 1.5rem;
+        
+      }
+      .accessories-title {
+        
+        font-size: 1.4rem;
+      }
+      
+      .accessories-child-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        display: flex;
+        
+      }
+      .accessorie-01, .accessorie-02, .accessorie-03, .accessorie-04, .accessorie-05, .accessorie-06 {
+        height: 15rem;
+        border-radius: 20px;
+      }
+      .accessorie-01:hover, .accessorie-02:hover, .accessorie-03:hover, .accessorie-04:hover, .accessorie-05:hover,.accessorie-06:hover{
+        .informations1 {
+            transform: translateY(0%);
+        }
+      }
+      .informations1 {
+        margin-top: 11rem;
+        font-size: 1rem;
+      }
+
+ 
+}
+

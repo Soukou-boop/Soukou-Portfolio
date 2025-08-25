@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>ECC</title>
+
+    <link rel="stylesheet" type="text/css" href="stylemap.css" />
+    <script type="module" src="indexmap.js"></script>
+  </head>
+  <body>
+
+     <!-- head -->
+     <div class="maincontainer">
+      <div class="container_left">
+          <!--<img src="images/ecc_logo.png" alt="" class="logo"> --> 
+          <h1 class="logo">ECC</h1>  
+      </div>
+           
+         <!--nav bar menu-->
+      <div class="container_right">
+          <a href="index.html" class="decor">
+              <div class="container_right_item">
+                  <span>Home</span>
+              </div>
+          </a>
+          <div class="container_right_item">
+              <span>Cars</span>
+          </div>
+          <div class="container_right_item">
+              <span>Our Services</span>
+          </div>
+          <div class="container_right_item">
+              <span>About Us</span>
+          </div>
+          <div class="container_right_item">
+              <span>Contact us</span>
+          </div>
+      </div> 
+      
+            <!-- login -->
+            <div class="main_login">
+              <a href="loginstyle2.html">
+                  <div class="login1">
+                      <h5>Login</h5>
+                  </div>
+              </a>
+              
+             </div> 
+  </div>
+   
+  <div class="page-container">
+
+    <div class="find-charging-station">
+      <div class="blur-element">
+        <div class="main-map-title">
+          <h2>find charging station</h2>
+        </div>
+        <div class="indication">
+          <span>find a charging station close to you using map</span>
+        </div>
+        <div class="inputresearch">
+          <input type="text" class="research" placeholder="Station Name">
+          <input type="submit" value="Find" class="submit-btn">
+        </div>
+      </div>
+      
+    </div>
+    <!--map div side-->
+    <div class="map">
+      <gmp-map
+       center="5.744516516631383, -0.48502783624598134"
+       zoom="10"
+       map-id="DEMO_MAP_ID"
+       
+      ></gmp-map>
+ 
+      <script
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps&v=beta"
+       defer
+      ></script>
+   </div>
+  </div>
+  
+    
+  </body>
+</html>

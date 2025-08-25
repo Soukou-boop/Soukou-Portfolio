@@ -1,0 +1,194 @@
+body {
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+
+
+.child-container {
+    width: 350px;
+    height: 500px;
+    background-color: #073970;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.555);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    
+}
+
+
+
+/*form log in title*/
+.login-title {
+    text-align: center;
+    margin: 10px 0 30px 0;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+}
+
+.the-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 15px;
+    
+    
+}
+.inpp {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.instruction {
+    font-size: 0.8rem;
+    margin: 0;
+    color: white;
+}
+
+.inputemail, .inputpassword {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    animation: anim2 1s ease-in-out;
+
+}
+
+@keyframes anim2 {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.forgot-password {
+    text-decoration: underline;
+    margin: 0;
+    text-align: end;
+}
+
+.forgot-password2 {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    color: #747474;
+    text-decoration-color: #747474;
+}
+
+.forgot-password2:hover {
+    color: orange;
+}
+
+.login-button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: orange;
+    cursor: pointer;
+    box-shadow: rgba(0 , 0 , 0 , 0.23) 0px 3px 8px;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.login-button:hover {
+    background: #073970;
+}
+
+.no-account-login {
+    margin: 0;
+    color: #747474;
+    font-size: 12px;
+
+}
+
+.sign-up {
+    margin-left:  1px;
+    font-size: 13px;
+    text-decoration: underline;
+    text-decoration-color: #073970;
+    color: #073970;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.5s ease;
+}
+
+.sign-up:hover {
+    color: orange;
+}
+
+
+/*sign with section*/
+.sgin-with {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.google-btn , .tik-tok-btn {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    gap: 5px;
+    animation: anim 1s ease-in-out;
+
+}
+
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.google-btn {
+    background-color: white;
+    border: 2px solid #747474;
+}
+
+.theicons {
+    height: 17px;
+    width: 17px;
+}
+
+.tik-tok-btn {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}

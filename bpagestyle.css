@@ -1,0 +1,367 @@
+/*nav bar*/
+.maincontainer {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    background-color: #073970;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    justify-content: space-around;
+   
+}
+
+.container_left {
+    color: orange;
+    margin-left: 12%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+
+/*when i add the ecc logo on the nav bar*/
+
+.logo {
+    display: flex;
+    width: 100px;
+    cursor: pointer;
+}
+
+.main_login {
+    display: flex;
+    margin-left: 7%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*nav menu*/
+
+.container_right {
+    display: flex;
+    margin: 0;
+    text-align: center;
+
+}
+
+.container_right_item {
+    color: orange;
+    margin: 28px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 90%;
+    transition: 0.9s ease;
+}
+
+
+/*login*/
+.login1 {
+  color: orange;
+  font-family: sans-serif;
+  font-size: 130%;
+  margin-left: -160%;
+  transition: 0.9s ease;
+  
+}
+
+.login1:hover {
+    color: white;
+    
+}
+
+.container_right_item:hover {
+    color: white;
+    
+}
+
+
+
+ 
+/* ordering page first div*/
+
+.main-container1 {
+    background-color: white;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.car-image {
+    display: flex;
+    
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.car-image2, .car-image3 {
+   margin: 27px;
+}
+
+.car-image3 {
+    background-color: white;
+    border-radius: 20px;
+    width: 490px;
+    height: 240px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    margin-left: 2.7px;
+
+    
+}
+
+.car-image-in1 {
+    
+    content: url(images/car_inside/5362.jpg);
+    border-radius: 20px;
+    width: 490px;
+    height: 240px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+    
+}
+
+.car-image-in2 {
+
+    content: url(images/car_inside/5362.jpg);
+    border-radius: 20px;
+    width: 490px;
+    height: 240px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+
+}
+
+.car-image-in3 {
+
+    content: url(images/car_inside/5362.jpg);
+    border-radius: 20px;
+    width: 490px;
+    height: 240px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+
+}
+
+.car-image-in4 {
+
+    content: url(images/car_inside/5362.jpg);
+    border-radius: 20px;
+    width: 490px;
+    height: 240px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+
+}
+
+.car-image-in5 {
+
+    content: url(images/car_inside/5362.jpg);
+    border-radius: 20px;
+    width: 490px;
+    height: 240px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+
+
+}
+
+.main-mini-box {
+    margin-top: -14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.minibox1 {
+    margin: 15px;
+}
+.texteccsport {
+    
+    padding: 11px;
+}
+
+.buttonbuy1 {
+    border: none;
+    background-color: orange;
+    border-radius: 13.5px;
+    width: 35%;
+    height: 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 23.8px;
+    min-width: 30%;
+    max-width: 60%;
+    transition: 0.6s ease;
+}
+
+.buttonbuy1:hover {
+    
+    background-color: #073970;
+}
+.imagestyle {
+    height: 20em;
+    width: 35em;
+    margin-top: 4em;
+    filter: drop-shadow(3px 3px 6px black);
+    
+}
+
+/*last side, car setting*/
+/*wheel color and accessory changing using javascript*/
+.lastmain-container-2s {
+    
+    height: 300px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.main-lastmain-title {
+   
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+
+.main-lastmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.command-second-title {
+    background-color: black;
+    height: 26px;
+    width: 78px;
+    padding-left: 8px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    
+}
+
+
+#wheel, #wheel2, #wheel3 {
+    height: 150px;
+    width: 200px;
+    border-radius: 20px;
+    max-height: 200px;
+    max-width: 200px;
+   
+}
+
+.wheel-setting, .command {
+    
+    margin: 25px;
+}
+
+
+#button-gray, #button-black, #button-red, #button-gray2, #button-black2, #button-red2, #button-gray3, #button-black3 {
+    border: none;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    transition: 0.8s ease;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.651);
+}
+
+#button-gray:hover, #button-black:hover, #button-red:hover, #button-gray2:hover, #button-black2:hover, #button-red2:hover,  #button-gray3:hover, #button-black3:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+#button-gray {
+    background-color: black;
+    
+}
+
+#button-gray2 {
+    background-color: black;
+
+}
+
+#button-gray3 {
+    background: url(images/image_de_voiture_tesla/black_wheel.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+
+
+#button-black {
+    background-color: blue;
+    color: white;
+}
+
+#button-black2 {
+    background-color: white;
+    
+}
+
+#button-black3 {
+    background: url(images/image_de_voiture_tesla/gray_wheel.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+#button-red {
+    background-color: red;
+}
+
+
+
+
+/*last ordering sdie*/
+
+.last-ordering-box {
+    height: 250px;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-imagelast {
+    
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    margin-left: 2.7px;
+}

@@ -1,0 +1,186 @@
+/*nav bar*/
+.maincontainer {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    background-color: #073970;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+   justify-content: space-around;
+}
+
+.container_left {
+    color: orange;
+    margin-left: 12%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+
+/*when i add the ecc logo on the nav bar*/
+
+.logo {
+    display: flex;
+    width: 100px;
+    cursor: pointer;
+}
+
+.main_login {
+    display: flex;
+    margin-left: 7rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*nav menu*/
+
+.container_right {
+    display: flex;
+    margin: 0;
+    text-align: center;
+
+}
+
+.container_right_item {
+    color: orange;
+    margin: 28px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 90%;
+    transition: 0.9s ease;
+}
+
+.decor {
+    text-decoration: none;
+}
+
+/*login*/
+.login1 {
+  color: orange;
+  font-family: sans-serif;
+  font-size: 130%;
+  margin-left: -160%;
+  transition: 0.9s ease;
+  
+}
+
+.login1:hover {
+    color: white;
+    
+}
+
+.container_right_item:hover {
+    color: white;
+    
+}
+
+
+/*the main page*/
+.page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*title*/
+.find-charging-station {
+    height: 170px;
+    background: url(images/man-charging-electric-car-full-shot.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.blur-element {
+    
+    height: 170px;
+    width: 100%;
+    padding-top: 5px;
+    backdrop-filter: blur(5px);
+}
+
+.main-map-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #073970;
+    animation: title 1s ease-in-out;
+}
+
+@keyframes title {
+    0%{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.indication {
+    text-shadow: 0 0 13px black;
+    color: white;
+}
+
+.inputresearch {
+    animation: input 1s ease-in-out;
+}
+
+@keyframes input {
+    0%{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+/*input for research*/
+.research {
+    box-sizing: border-box;
+    border: 1px solid #c0c0c0;
+    padding: 12px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 10px 12px;
+    border-radius: 20px;
+    background-color: orange;
+    border: 0 !important;
+    outline: 0 !important;
+    color: white;
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.16) 3px 3px 6px;
+}
+
+.submit-btn:hover {
+    background-color: #073970;
+    transform: scale(1.1);
+}
+
+/*map div*/
+.map {
+    height: 400px;
+    animation: map 1s ease-in-out;
+}
+
+@keyframes map {
+    0%{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
