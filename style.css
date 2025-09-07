@@ -861,17 +861,10 @@ ul {
 
 @media (max-width:992px) {
     .main_content {
-    height: 100vh;
-    height: 100dvh;
     background: linear-gradient( rgba(0, 0, 0, 0.900),rgba(0, 0, 0, 0.100)) , url(images/front-wheel-blue-vintage-sedan.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
 }
 
@@ -1011,6 +1004,7 @@ ul {
 
  
 }
+
 
 
 
